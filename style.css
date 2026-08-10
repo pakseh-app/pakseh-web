@@ -2927,3 +2927,663 @@ body {
     text-shadow:
         0 0 8px rgba(255,255,255,.10);
 }
+
+/* =====================================================
+   MOBILE UI FIX
+   PAKSEH.WEB.ID
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* =================================================
+       BODY
+    ================================================= */
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* =================================================
+       MAIN
+    ================================================= */
+
+    .main {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    .content {
+        width: 100%;
+        padding:
+            18px 14px 40px;
+    }
+
+
+    /* =================================================
+       TOPBAR
+    ================================================= */
+
+    .topbar {
+        height: 62px;
+
+        padding:
+            0 15px;
+    }
+
+
+    .topbar-title {
+        font-size: 12px;
+    }
+
+
+    .theme-toggle {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    /* =================================================
+       HERO MOBILE
+    ================================================= */
+
+    .hero {
+
+        min-height: 360px;
+
+        height: auto;
+
+        padding:
+            42px 18px 38px;
+
+        border-radius: 22px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        overflow: hidden;
+    }
+
+
+    /* =================================================
+       HERO GLOW
+    ================================================= */
+
+    .hero-glow {
+        opacity: .55;
+
+        filter: blur(45px);
+    }
+
+
+    .glow-one {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .glow-two {
+        width: 160px;
+        height: 160px;
+    }
+
+
+    /* =================================================
+       LOGO MOBILE
+    ================================================= */
+
+    .custom-logo {
+
+        width: 108px;
+        height: 108px;
+
+        margin-bottom: 24px;
+
+        padding: 7px;
+
+        border-radius: 28px;
+
+        box-shadow:
+            0 18px 35px
+            rgba(0,0,0,.22),
+
+            0 0 28px
+            rgba(139,92,246,.30);
+    }
+
+
+    .logo-inner {
+        border-radius: 21px;
+    }
+
+
+    .logo-inner img {
+        border-radius: 20px;
+    }
+
+
+    /* =================================================
+       WELCOME
+    ================================================= */
+
+    .welcome {
+
+        font-size: 9px;
+
+        letter-spacing:
+            2.5px;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* =================================================
+       BRAND TITLE
+    ================================================= */
+
+    .animated-brand {
+
+        width: 100%;
+
+        justify-content: center;
+
+        font-size:
+            clamp(
+                27px,
+                9.5vw,
+                42px
+            );
+
+        line-height: 1;
+
+        letter-spacing:
+            -1px;
+
+        perspective:
+            900px;
+
+        -webkit-perspective:
+            900px;
+
+        transform:
+            translateZ(0);
+    }
+
+
+    /*
+       Karena setiap huruf adalah span,
+       jangan biarkan spacing melebar.
+    */
+
+    .animated-brand .letter {
+
+        margin: 0;
+
+        padding: 0;
+
+        letter-spacing:
+            -1px;
+    }
+
+
+    /* =================================================
+       HERO DESCRIPTION
+    ================================================= */
+
+    .hero-content p {
+
+        max-width:
+            320px;
+
+        margin:
+            18px auto 0;
+
+        font-size:
+            11px;
+
+        line-height:
+            1.7;
+    }
+
+
+    /* =================================================
+       QUICK SECTION
+    ================================================= */
+
+    .quick-section {
+
+        margin-top:
+            30px;
+    }
+
+
+    .section-heading {
+
+        margin-bottom:
+            15px;
+    }
+
+
+    .section-heading small {
+
+        font-size:
+            8px;
+
+        letter-spacing:
+            2px;
+    }
+
+
+    .section-heading h2 {
+
+        margin-top:
+            5px;
+
+        font-size:
+            25px;
+
+        line-height:
+            1.1;
+    }
+
+
+    /* =================================================
+       QUICK GRID
+    ================================================= */
+
+    .quick-grid {
+
+        display:
+            grid;
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            12px;
+    }
+
+
+    /* =================================================
+       QUICK CARD
+    ================================================= */
+
+    .quick-card {
+
+        min-height:
+            105px;
+
+        padding:
+            17px;
+
+        border-radius:
+            17px;
+    }
+
+
+    .quick-icon {
+
+        width:
+            45px;
+
+        height:
+            45px;
+
+        flex-shrink:
+            0;
+
+        border-radius:
+            13px;
+
+        font-size:
+            18px;
+    }
+
+
+    .quick-info {
+
+        min-width:
+            0;
+
+        padding-right:
+            25px;
+    }
+
+
+    .quick-info h3 {
+
+        font-size:
+            13px;
+
+        line-height:
+            1.3;
+    }
+
+
+    .quick-info p {
+
+        margin-top:
+            5px;
+
+        font-size:
+            10px;
+
+        line-height:
+            1.5;
+    }
+
+
+    .arrow {
+
+        font-size:
+            18px;
+    }
+
+
+    /* =================================================
+       PREMIUM CARD
+    ================================================= */
+
+    .premium-card {
+
+        min-height:
+            105px;
+    }
+
+
+    .premium-label {
+
+        top:
+            12px;
+
+        right:
+            12px;
+    }
+
+
+    /* =================================================
+       INFO CARD
+    ================================================= */
+
+    .info-card {
+
+        margin-top:
+            14px;
+
+        padding:
+            18px;
+
+        border-radius:
+            17px;
+    }
+
+
+    .info-card h3 {
+
+        font-size:
+            13px;
+    }
+
+
+    .info-card p {
+
+        font-size:
+            10px;
+
+        line-height:
+            1.6;
+    }
+
+
+    /* =================================================
+       LIGHT THEME - MOBILE
+    ================================================= */
+
+    body.light-theme {
+
+        color:
+            #202333;
+    }
+
+
+    body.light-theme .topbar {
+
+        background:
+            rgba(248,249,253,.92);
+    }
+
+
+    body.light-theme .topbar-title {
+
+        color:
+            #566078;
+    }
+
+
+    body.light-theme .hero {
+
+        background:
+
+            radial-gradient(
+                circle at 15% 15%,
+                rgba(139,92,246,.10),
+                transparent 35%
+            ),
+
+            radial-gradient(
+                circle at 90% 80%,
+                rgba(0,190,255,.08),
+                transparent 35%
+            ),
+
+            #f9faff;
+
+        box-shadow:
+            0 20px 45px
+            rgba(40,50,80,.10);
+    }
+
+
+    body.light-theme .hero-content h1 {
+
+        color:
+            #171923;
+    }
+
+
+    body.light-theme .hero-content p {
+
+        color:
+            #687187;
+    }
+
+
+    body.light-theme .section-heading h2 {
+
+        color:
+            #202333;
+    }
+
+
+    body.light-theme .quick-card {
+
+        background:
+            rgba(255,255,255,.82);
+
+        border:
+            1px solid
+            rgba(100,110,140,.10);
+
+        box-shadow:
+            0 12px 30px
+            rgba(40,50,80,.07);
+    }
+
+
+    body.light-theme .quick-info h3 {
+
+        color:
+            #202333;
+    }
+
+
+    body.light-theme .quick-info p {
+
+        color:
+            #697287;
+    }
+
+
+    body.light-theme .arrow {
+
+        color:
+            #7650d8;
+    }
+
+
+    body.light-theme .info-card {
+
+        background:
+            rgba(255,255,255,.82);
+
+        border:
+            1px solid
+            rgba(100,110,140,.10);
+    }
+
+
+    body.light-theme .info-card h3 {
+
+        color:
+            #202333;
+    }
+
+
+    body.light-theme .info-card p {
+
+        color:
+            #697287;
+    }
+
+
+    /* =================================================
+       MOBILE SIDEBAR
+    ================================================= */
+
+    .sidebar {
+
+        width:
+            260px;
+
+        max-width:
+            82vw;
+    }
+
+
+    .brand {
+
+        padding:
+            18px 17px;
+    }
+
+
+    .menu {
+
+        padding:
+            8px 12px;
+    }
+
+
+    .menu-item {
+
+        min-height:
+            48px;
+
+        padding:
+            0 13px;
+
+        font-size:
+            11px;
+    }
+
+
+    .sidebar-footer {
+
+        padding:
+            15px 18px;
+
+        font-size:
+            9px;
+    }
+
+}
+
+
+/* =====================================================
+   EXTRA SMALL PHONE
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .content {
+
+        padding-left:
+            10px;
+
+        padding-right:
+            10px;
+    }
+
+
+    .hero {
+
+        min-height:
+            335px;
+
+        padding:
+            35px 14px;
+    }
+
+
+    .custom-logo {
+
+        width:
+            95px;
+
+        height:
+            95px;
+    }
+
+
+    .animated-brand {
+
+        font-size:
+            25px;
+    }
+
+
+    .quick-card {
+
+        padding:
+            14px;
+    }
+
+
+    .quick-icon {
+
+        width:
+            42px;
+
+        height:
+            42px;
+    }
+
+}

@@ -27,10 +27,7 @@
      SIDEBAR
 ===================================================== -->
 
-<aside
-    class="sidebar"
-    id="sidebar"
->
+<aside class="sidebar" id="sidebar">
 
 
     <!-- BRAND -->
@@ -38,11 +35,14 @@
     <div class="brand">
 
         <div class="brand-logo">
-    <img
-        src="assets/img/logo.png"
-        alt="Pakseh"
-    >
-</div>
+
+            <img
+                src="assets/img/logo.png"
+                alt="Logo Pakseh"
+            >
+
+        </div>
+
         <div class="brand-text">
 
             <strong>
@@ -58,8 +58,9 @@
     </div>
 
 
+
     <!-- =================================================
-         MENU
+         MENU SIDEBAR
     ================================================= -->
 
     <nav class="menu">
@@ -144,7 +145,7 @@
         <!-- APLIKASI / TOOLS -->
 
         <a
-            href="#"
+            href="tools.html"
             class="menu-item"
         >
 
@@ -160,6 +161,7 @@
 
 
     </nav>
+
 
 
     <!-- =================================================
@@ -180,6 +182,7 @@
 
 
 </aside>
+
 
 
 <!-- =====================================================
@@ -224,8 +227,6 @@
         <div class="topbar-actions">
 
 
-            <!-- DARK / LIGHT -->
-
             <button
                 class="theme-toggle"
                 id="themeToggle"
@@ -265,22 +266,22 @@
             <div class="hero-glow glow-two"></div>
 
 
-            <!-- LOGO
-                 UBAH LOGO DI SINI
-            -->
+
+            <!-- LOGO UTAMA -->
 
             <div class="custom-logo">
 
-    <div class="logo-inner">
+                <div class="logo-inner">
 
-        <img
-            src="assets/img/logo.png"
-            alt="Logo Pakseh.web.id"
-        >
+                    <img
+                        src="assets/img/logo.png"
+                        alt="Logo Pakseh.web.id"
+                    >
 
-    </div>
+                </div>
 
-</div>
+            </div>
+
 
 
             <!-- HERO TEXT -->
@@ -293,27 +294,33 @@
                 </div>
 
 
-            <h1 class="animated-brand">
 
-    <span class="letter white">P</span>
-    <span class="letter white">a</span>
-    <span class="letter white">k</span>
-    <span class="letter white">s</span>
-    <span class="letter white">e</span>
-    <span class="letter white">h</span>
+                <!-- =================================================
+                     JUDUL ANIMASI PER HURUF
+                ================================================= -->
 
-    <span class="letter purple">.</span>
+                <h1 class="animated-brand">
 
-    <span class="letter purple">w</span>
-    <span class="letter purple">e</span>
-    <span class="letter pink">b</span>
+                    <span class="letter white">P</span>
+                    <span class="letter white">a</span>
+                    <span class="letter white">k</span>
+                    <span class="letter white">s</span>
+                    <span class="letter white">e</span>
+                    <span class="letter white">h</span>
 
-    <span class="letter pink">.</span>
+                    <span class="letter purple">.</span>
 
-    <span class="letter pink">i</span>
-    <span class="letter blue">d</span>
+                    <span class="letter purple">w</span>
+                    <span class="letter purple">e</span>
+                    <span class="letter pink">b</span>
 
-</h1>
+                    <span class="letter pink">.</span>
+
+                    <span class="letter pink">i</span>
+                    <span class="letter blue">d</span>
+
+                </h1>
+
 
 
                 <p>
@@ -480,7 +487,7 @@
                 ================================================= -->
 
                 <a
-                    href="#"
+                    href="tools.html"
                     class="quick-card"
                 >
 
@@ -496,8 +503,8 @@
                         </h3>
 
                         <p>
-                            Kumpulan aplikasi
-                            dan tools yang berguna.
+                            Kumpulan aplikasi dan tools
+                            sederhana yang berguna.
                         </p>
 
                     </div>
@@ -518,7 +525,7 @@
 
 
         <!-- =================================================
-             INFO
+             INFO CARD
         ================================================= -->
 
         <section class="info-card">
@@ -564,15 +571,10 @@
 
 
 <!-- =====================================================
-     PREMIUM STYLE
+     PREMIUM MENU STYLE
 ===================================================== -->
 
 <style>
-
-
-/* =====================================================
-   PREMIUM SIDEBAR
-===================================================== */
 
 .premium-menu {
     position: relative;
@@ -608,9 +610,11 @@
     padding:
         3px 6px;
 
-    border-radius: 5px;
+    border-radius:
+        5px;
 
-    color: #ffd166;
+    color:
+        #ffd166;
 
     background:
         rgba(255,209,102,.08);
@@ -619,13 +623,16 @@
         1px solid
         rgba(255,209,102,.20);
 
-    font-size: 7px;
+    font-size:
+        7px;
 
-    font-weight: 800;
+    font-weight:
+        800;
 
-    letter-spacing: .7px;
-
+    letter-spacing:
+        .7px;
 }
+
 
 
 /* =====================================================
@@ -633,6 +640,8 @@
 ===================================================== */
 
 .premium-card {
+
+    position: relative;
 
     background:
 
@@ -643,48 +652,13 @@
         ),
 
         #0c101c;
-
-}
-
-
-.premium-card::before {
-
-    background:
-
-        conic-gradient(
-            from var(--neon-angle),
-
-            transparent 0deg,
-            transparent 210deg,
-
-            rgba(255,209,102,.06) 230deg,
-
-            #b7791f 250deg,
-
-            #ffd166 270deg,
-
-            #fff4c2 282deg,
-
-            #ffffff 288deg,
-
-            #ffcf5c 298deg,
-
-            transparent 320deg,
-            transparent 360deg
-        );
-
-    filter:
-        drop-shadow(
-            0 0 9px
-            rgba(255,209,102,.80)
-        );
-
 }
 
 
 .premium-card-icon {
 
-    color: #ffd166;
+    color:
+        #ffd166;
 
     background:
 
@@ -700,34 +674,39 @@
     box-shadow:
         0 0 25px
         rgba(255,209,102,.13);
-
 }
 
 
 .premium-card h3 {
 
-    color: #fff3c4;
+    color:
+        #fff3c4;
 
     text-shadow:
         0 0 12px
         rgba(255,209,102,.14);
-
 }
 
 
 .premium-label {
 
-    position: absolute;
+    position:
+        absolute;
 
-    top: 17px;
-    right: 17px;
+    top:
+        17px;
+
+    right:
+        17px;
 
     padding:
         4px 7px;
 
-    border-radius: 6px;
+    border-radius:
+        6px;
 
-    color: #ffd166;
+    color:
+        #ffd166;
 
     background:
         rgba(255,209,102,.08);
@@ -736,16 +715,18 @@
         1px solid
         rgba(255,209,102,.22);
 
-    font-size: 7px;
+    font-size:
+        7px;
 
-    font-weight: 900;
+    font-weight:
+        900;
 
-    letter-spacing: 1px;
+    letter-spacing:
+        1px;
 
     box-shadow:
         0 0 15px
         rgba(255,209,102,.08);
-
 }
 
 
@@ -758,18 +739,19 @@
 
         0 0 40px
         rgba(255,209,102,.12);
-
 }
 
 
+
 /* =====================================================
-   MOBILE
+   MOBILE PREMIUM
 ===================================================== */
 
 @media (max-width:700px) {
 
     .premium-card {
-        grid-column: span 1;
+        grid-column:
+            span 1;
     }
 
 }
