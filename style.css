@@ -2540,159 +2540,23 @@ body {
 
 /* =====================================================
    PAKSEH.WEB.ID
-   3D HORIZONTAL FLIP
-   URUTAN: KIRI → KANAN
-   INTERVAL: 5 DETIK
-===================================================== */
-
-.animated-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    white-space: nowrap;
-
-    perspective: 1000px;
-}
-
-
-/* -----------------------------------------------------
-   SEMUA BAGIAN
------------------------------------------------------ */
-
-.flip-word {
-    display: inline-block;
-
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-
-    transform-origin: center;
-
-    will-change: transform;
-
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-
-/* -----------------------------------------------------
-   PAKSEH
------------------------------------------------------ */
-
-.flip-one {
-    color: white;
-
-    animation-name: flipSequenceOne;
-}
-
-
-/* -----------------------------------------------------
-   .WEB
------------------------------------------------------ */
-
-.flip-two {
-    background:
-        linear-gradient(
-            90deg,
-            #a78bfa,
-            #d084ff,
-            #ff65c7
-        );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-
-    animation-name: flipSequenceTwo;
-}
-
-
-/* -----------------------------------------------------
-   .ID
------------------------------------------------------ */
-
-.flip-three {
-    background:
-        linear-gradient(
-            90deg,
-            #ff65c7,
-            #5bdcff
-        );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-
-    animation-name: flipSequenceThree;
-}
-
-
-/* =====================================================
-   PAKSEH
-   MULAI PALING AWAL
-===================================================== */
-
-@keyframes flipSequenceOne {
-
-    0% {
-        transform:
-            rotateY(0deg);
-    }
-
-    3% {
-        transform:
-            rotateY(0deg);
-    }
-
-    7% {
-        transform:
-            rotateY(90deg);
-    }
-
-    11% {
-        transform:
-            rotateY(180deg);
-    }
-
-    15% {
-        transform:
-            rotateY(360deg);
-    }
-
-    20% {
-        transform:
-            rotateY(360deg);
-    }
-
-    100% {
-        transform:
-            rotateY(360deg);
-    }
-
-}
-
-/* =====================================================
-   PAKSEH.WEB.ID
-   LETTER BY LETTER 3D FLIP
+   3D FLIP PER HURUF
    KIRI → KANAN
-   INTERVAL ±5 DETIK
+   INTERVAL 5 DETIK
 ===================================================== */
 
 .animated-brand {
-
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     white-space: nowrap;
 
     perspective: 1200px;
+    -webkit-perspective: 1200px;
 
     transform-style: preserve-3d;
-
+    -webkit-transform-style: preserve-3d;
 }
 
 
@@ -2700,64 +2564,81 @@ body {
    SETIAP HURUF
 ===================================================== */
 
-.letter {
+.animated-brand .letter {
 
     display: inline-block;
 
     position: relative;
 
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 
     backface-visibility: hidden;
-
-    transform-origin: center center;
+    -webkit-backface-visibility: hidden;
 
     will-change: transform;
 
-    /*
-       5 detik = satu siklus penuh
-    */
-
     animation:
-        letterFlip 5s cubic-bezier(
-            .22,
-            .61,
-            .36,
-            1
-        ) infinite;
+        letterFlip 5s
+        cubic-bezier(.22,.61,.36,1)
+        infinite;
 
+    -webkit-animation:
+        letterFlip 5s
+        cubic-bezier(.22,.61,.36,1)
+        infinite;
 }
 
 
 /* =====================================================
-   WARNA
+   PAKSEH = PUTIH
 ===================================================== */
 
-.letter.white {
+.animated-brand .letter.white {
 
-    color: #ffffff;
+    color: #ffffff !important;
 
+    background: none !important;
+
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.08);
 }
 
 
-.letter.purple {
+/* =====================================================
+   .WEB = UNGU / PINK
+===================================================== */
+
+.animated-brand .letter.purple {
 
     background:
         linear-gradient(
             90deg,
             #a78bfa,
-            #c084fc
+            #c084fc,
+            #d084ff
         );
 
     -webkit-background-clip: text;
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
-
 }
 
 
-.letter.pink {
+/* =====================================================
+   .ID = PINK
+===================================================== */
+
+.animated-brand .letter.pink {
 
     background:
         linear-gradient(
@@ -2770,11 +2651,14 @@ body {
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
-
 }
 
 
-.letter.blue {
+/* =====================================================
+   D = CYAN
+===================================================== */
+
+.animated-brand .letter.blue {
 
     background:
         linear-gradient(
@@ -2787,104 +2671,184 @@ body {
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
-
 }
 
 
 /* =====================================================
-   ANIMASI UTAMA
+   ANIMASI FLIP
 ===================================================== */
 
 @keyframes letterFlip {
 
-    /*
-       NORMAL
-    */
-
     0% {
-
-        transform:
-            rotateY(0deg)
-            translateZ(0);
-
+        transform: rotateY(0deg) translateZ(0);
     }
-
-
-    /*
-       mulai flip
-    */
 
     2% {
-
-        transform:
-            rotateY(0deg)
-            translateZ(0);
-
+        transform: rotateY(0deg) translateZ(0);
     }
-
-
-    /*
-       bagian tengah flip
-    */
 
     5% {
-
-        transform:
-            rotateY(90deg)
-            translateZ(8px);
-
+        transform: rotateY(90deg) translateZ(10px);
     }
-
-
-    /*
-       selesai flip
-    */
 
     8% {
-
-        transform:
-            rotateY(180deg)
-            translateZ(0);
-
+        transform: rotateY(180deg) translateZ(0);
     }
-
-
-    /*
-       kembali normal
-    */
 
     11% {
-
-        transform:
-            rotateY(360deg)
-            translateZ(0);
-
+        transform: rotateY(360deg) translateZ(0);
     }
-
-
-    /*
-       diam
-    */
 
     18% {
+        transform: rotateY(360deg) translateZ(0);
+    }
 
-        transform:
+    100% {
+        transform: rotateY(360deg) translateZ(0);
+    }
+}
+
+
+@-webkit-keyframes letterFlip {
+
+    0% {
+        -webkit-transform:
+            rotateY(0deg)
+            translateZ(0);
+    }
+
+    2% {
+        -webkit-transform:
+            rotateY(0deg)
+            translateZ(0);
+    }
+
+    5% {
+        -webkit-transform:
+            rotateY(90deg)
+            translateZ(10px);
+    }
+
+    8% {
+        -webkit-transform:
+            rotateY(180deg)
+            translateZ(0);
+    }
+
+    11% {
+        -webkit-transform:
             rotateY(360deg)
             translateZ(0);
+    }
 
+    18% {
+        -webkit-transform:
+            rotateY(360deg)
+            translateZ(0);
+    }
+
+    100% {
+        -webkit-transform:
+            rotateY(360deg)
+            translateZ(0);
+    }
+}
+
+
+/* =====================================================
+   URUTAN KIRI → KANAN
+===================================================== */
+
+.animated-brand .letter:nth-child(1) {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.animated-brand .letter:nth-child(2) {
+    animation-delay: .10s;
+    -webkit-animation-delay: .10s;
+}
+
+.animated-brand .letter:nth-child(3) {
+    animation-delay: .20s;
+    -webkit-animation-delay: .20s;
+}
+
+.animated-brand .letter:nth-child(4) {
+    animation-delay: .30s;
+    -webkit-animation-delay: .30s;
+}
+
+.animated-brand .letter:nth-child(5) {
+    animation-delay: .40s;
+    -webkit-animation-delay: .40s;
+}
+
+.animated-brand .letter:nth-child(6) {
+    animation-delay: .50s;
+    -webkit-animation-delay: .50s;
+}
+
+.animated-brand .letter:nth-child(7) {
+    animation-delay: .60s;
+    -webkit-animation-delay: .60s;
+}
+
+.animated-brand .letter:nth-child(8) {
+    animation-delay: .70s;
+    -webkit-animation-delay: .70s;
+}
+
+.animated-brand .letter:nth-child(9) {
+    animation-delay: .80s;
+    -webkit-animation-delay: .80s;
+}
+
+.animated-brand .letter:nth-child(10) {
+    animation-delay: .90s;
+    -webkit-animation-delay: .90s;
+}
+
+.animated-brand .letter:nth-child(11) {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.animated-brand .letter:nth-child(12) {
+    animation-delay: 1.10s;
+    -webkit-animation-delay: 1.10s;
+}
+
+.animated-brand .letter:nth-child(13) {
+    animation-delay: 1.20s;
+    -webkit-animation-delay: 1.20s;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .animated-brand {
+
+        perspective: 900px;
+        -webkit-perspective: 900px;
+
+        font-size:
+            clamp(28px, 9vw, 48px);
     }
 
 
-    /*
-       menunggu sampai 5 detik
-    */
+    .animated-brand .letter {
 
-    100% {
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
 
-        transform:
-            rotateY(360deg)
-            translateZ(0);
-
+        backface-visibility: visible;
+        -webkit-backface-visibility: visible;
     }
 
 }
@@ -2943,4 +2907,23 @@ body {
 
 .letter:nth-child(13) {
     animation-delay: 1.20s;
+}
+
+/* =====================================================
+   WARNA PAKSEH = PUTIH
+   FLIP TETAP AKTIF
+===================================================== */
+
+.animated-brand .letter.white {
+    color: #ffffff !important;
+
+    background: none !important;
+
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+
+    -webkit-text-fill-color: #ffffff !important;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.10);
 }
