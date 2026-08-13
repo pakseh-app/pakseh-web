@@ -3889,3 +3889,786 @@ body {
     }
 
 }
+
+/* =====================================================
+   PAKSEH.WEB.ID
+   BALANCED DARK / LIGHT THEME
+===================================================== */
+
+
+/* =====================================================
+   DARK MODE
+   Tidak terlalu hitam
+===================================================== */
+
+body {
+
+    background:
+
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(91,70,150,.10),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(20,110,140,.07),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #111522 0%,
+            #0e1320 50%,
+            #0b101b 100%
+        );
+
+    color:
+        #d8dceb;
+
+}
+
+
+/* MAIN AREA */
+
+.main {
+
+    background:
+        transparent;
+
+}
+
+
+/* TOPBAR */
+
+.topbar {
+
+    background:
+        rgba(17,21,34,.72);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.055);
+
+    backdrop-filter:
+        blur(16px);
+
+    -webkit-backdrop-filter:
+        blur(16px);
+
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #121726,
+            #0f1420
+        );
+
+    border-right:
+        1px solid
+        rgba(255,255,255,.06);
+
+    box-shadow:
+        10px 0 35px
+        rgba(0,0,0,.18);
+
+}
+
+
+/* CONTENT */
+
+.content {
+
+    color:
+        #d8dceb;
+
+}
+
+
+/* =====================================================
+   DARK MODE CARD BALANCE
+===================================================== */
+
+.quick-card,
+.info-card,
+.article-card,
+.tool-card,
+.contact-card,
+.premium-template {
+
+    background:
+        rgba(20,25,39,.72);
+
+    border-color:
+        rgba(255,255,255,.075);
+
+    box-shadow:
+        0 16px 38px
+        rgba(0,0,0,.20);
+
+}
+
+
+/* HERO */
+
+.hero {
+
+    background:
+
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(139,92,246,.13),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(34,211,238,.08),
+            transparent 35%
+        ),
+
+        rgba(18,23,36,.78);
+
+    border-color:
+        rgba(255,255,255,.07);
+
+}
+
+
+/* TEXT */
+
+.quick-info p,
+.info-card p,
+.article-body p,
+.tool-content p,
+.contact-info p {
+
+    color:
+        #9aa3b8;
+
+}
+
+
+/* =====================================================
+   LIGHT MODE
+   Tidak terlalu putih
+===================================================== */
+
+body.light-theme {
+
+    background:
+
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(139,92,246,.07),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(56,189,248,.06),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #eef1f7 0%,
+            #e9edf5 50%,
+            #e5eaf2 100%
+        );
+
+    color:
+        #303749;
+
+}
+
+
+/* =====================================================
+   LIGHT TOPBAR
+===================================================== */
+
+body.light-theme .topbar {
+
+    background:
+        rgba(239,242,248,.82);
+
+    border-bottom:
+        1px solid
+        rgba(80,90,115,.10);
+
+    box-shadow:
+        0 5px 20px
+        rgba(60,70,95,.05);
+
+}
+
+
+/* =====================================================
+   LIGHT SIDEBAR
+===================================================== */
+
+body.light-theme .sidebar {
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #edf0f6,
+            #e7ebf3
+        );
+
+    border-right:
+        1px solid
+        rgba(80,90,115,.10);
+
+    box-shadow:
+        10px 0 30px
+        rgba(60,70,95,.07);
+
+}
+
+
+/* =====================================================
+   LIGHT CARDS
+===================================================== */
+
+body.light-theme .quick-card,
+body.light-theme .info-card,
+body.light-theme .article-card,
+body.light-theme .tool-card,
+body.light-theme .contact-card,
+body.light-theme .premium-template {
+
+    background:
+        rgba(248,250,253,.72);
+
+    border-color:
+        rgba(80,90,115,.10);
+
+    box-shadow:
+        0 14px 32px
+        rgba(60,70,95,.08);
+
+}
+
+
+/* =====================================================
+   LIGHT HERO
+===================================================== */
+
+body.light-theme .hero {
+
+    background:
+
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(139,92,246,.09),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(34,211,238,.07),
+            transparent 35%
+        ),
+
+        rgba(245,247,251,.76);
+
+    border-color:
+        rgba(80,90,115,.10);
+
+    box-shadow:
+        0 20px 45px
+        rgba(60,70,95,.08);
+
+}
+
+
+/* =====================================================
+   LIGHT TEXT
+===================================================== */
+
+body.light-theme .quick-info h3,
+body.light-theme .info-card h3,
+body.light-theme .article-body h3,
+body.light-theme .tool-content h2,
+body.light-theme .contact-info h2 {
+
+    color:
+        #303647;
+
+}
+
+
+body.light-theme .quick-info p,
+body.light-theme .info-card p,
+body.light-theme .article-body p,
+body.light-theme .tool-content p,
+body.light-theme .contact-info p {
+
+    color:
+        #697386;
+
+}
+
+
+/* =====================================================
+   LIGHT SECTION TITLE
+===================================================== */
+
+body.light-theme .section-heading h2,
+body.light-theme .blog-section-heading h2,
+body.light-theme .premium-section-heading h2 {
+
+    color:
+        #303647;
+
+}
+
+
+/* =====================================================
+   LIGHT BLOG / PREMIUM / TOOLS
+===================================================== */
+
+body.light-theme .featured-article,
+body.light-theme .premium-hero {
+
+    box-shadow:
+        0 20px 50px
+        rgba(60,70,95,.08);
+
+}
+
+
+/* =====================================================
+   GLOW CONTROL
+   Supaya mode terang tidak menyilaukan
+===================================================== */
+
+body.light-theme .hero-glow,
+body.light-theme .featured-glow,
+body.light-theme .premium-hero-glow {
+
+    opacity:
+        .45;
+
+}
+
+
+/* =====================================================
+   MOBILE THEME BALANCE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+
+        background:
+
+            linear-gradient(
+                160deg,
+                #111522,
+                #0d121d
+            );
+
+    }
+
+
+    body.light-theme {
+
+        background:
+
+            linear-gradient(
+                160deg,
+                #edf0f6,
+                #e6eaf2
+            );
+
+    }
+
+
+    body.light-theme .topbar {
+
+        background:
+            rgba(237,240,246,.88);
+
+    }
+
+
+    body.light-theme .quick-card,
+    body.light-theme .article-card,
+    body.light-theme .tool-card,
+    body.light-theme .contact-card {
+
+        background:
+            rgba(248,250,253,.82);
+
+    }
+
+}
+
+/* =====================================================
+   PAKSEH.WEB.ID
+   MOBILE PERFORMANCE MODE
+   Visual tetap neon, efek berat dikurangi
+===================================================== */
+
+@media (max-width: 700px) {
+
+    /* ---------------------------------------------
+       KURANGI BLUR
+    --------------------------------------------- */
+
+    .topbar,
+    .sidebar,
+    .quick-card,
+    .article-card,
+    .contact-card,
+    .premium-template,
+    .featured-article,
+    .premium-hero {
+
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       KURANGI SHADOW BERAT
+    --------------------------------------------- */
+
+    .quick-card,
+    .article-card,
+    .contact-card,
+    .premium-template {
+
+        box-shadow:
+            0 10px 24px rgba(0,0,0,.16) !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       LOGO
+       Tetap glow tetapi lebih ringan
+    --------------------------------------------- */
+
+    .custom-logo {
+
+        box-shadow:
+            0 15px 30px rgba(0,0,0,.30),
+            0 0 25px rgba(139,92,246,.18) !important;
+
+    }
+
+
+    .logo-inner {
+
+        box-shadow:
+            inset 0 2px 3px rgba(255,255,255,.18),
+            inset 0 -5px 9px rgba(0,0,0,.20),
+            0 0 22px rgba(139,92,246,.22) !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       FEATURE CARD
+    --------------------------------------------- */
+
+    .quick-card:hover,
+    .article-card:hover,
+    .contact-card:hover,
+    .premium-template:hover {
+
+        transform: none !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       GLOW DEKORASI
+       Kurangi blur GPU
+    --------------------------------------------- */
+
+    .premium-hero-glow,
+    .featured-glow,
+    .hero-glow {
+
+        filter:
+            blur(25px) !important;
+
+        opacity:
+            .45 !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       ORB / DEKORASI
+    --------------------------------------------- */
+
+    .visual-orb {
+
+        animation-duration:
+            18s !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       RING
+       Tetap bergerak tetapi lebih lambat
+    --------------------------------------------- */
+
+    .decoration-ring {
+
+        animation-duration:
+            18s !important;
+
+    }
+
+
+    .ring-one {
+
+        animation-duration:
+            20s !important;
+
+    }
+
+
+    .ring-two {
+
+        animation-duration:
+            16s !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       TEMPLATE GLOW
+    --------------------------------------------- */
+
+    .template-glow {
+
+        animation-duration:
+            7s !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       HINDARI ANIMASI SAAT HOVER
+       HP tidak membutuhkan hover
+    --------------------------------------------- */
+
+    .contact-card:hover .contact-arrow {
+
+        transform:
+            none !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       KURANGI GLOW BERLEBIH
+    --------------------------------------------- */
+
+    .contact-icon,
+    .visual-icon,
+    .coming-icon {
+
+        box-shadow:
+            0 0 14px rgba(139,92,246,.10) !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       SIDEBAR MOBILE
+    --------------------------------------------- */
+
+    .sidebar {
+
+        box-shadow:
+            8px 0 22px rgba(0,0,0,.18) !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       MODAL
+    --------------------------------------------- */
+
+    .article-modal-backdrop {
+
+        backdrop-filter:
+            none !important;
+
+        -webkit-backdrop-filter:
+            none !important;
+
+        background:
+            rgba(3,5,12,.82) !important;
+
+    }
+
+}
+
+/* =====================================================
+   PAKSEH.WEB.ID
+   FINAL THEME BALANCE
+===================================================== */
+
+
+/* =====================================================
+   DARK MODE
+   Sedikit lebih terang
+===================================================== */
+
+body {
+
+    background:
+
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(120,90,190,.13),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(30,130,160,.09),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #171c2b 0%,
+            #141a28 50%,
+            #111725 100%
+        );
+
+    color:
+        #dce1ee;
+
+}
+
+
+.topbar {
+
+    background:
+        rgba(23,28,43,.78);
+
+}
+
+
+.sidebar {
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #181e2d,
+            #151b29
+        );
+
+}
+
+
+/* =====================================================
+   LIGHT MODE
+   Sedikit lebih gelap
+===================================================== */
+
+body.light-theme {
+
+    background:
+
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(139,92,246,.06),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(56,189,248,.05),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #e2e6ee 0%,
+            #dde2eb 50%,
+            #d8dee8 100%
+        );
+
+    color:
+        #303646;
+
+}
+
+
+body.light-theme .topbar {
+
+    background:
+        rgba(226,230,238,.86);
+
+}
+
+
+body.light-theme .sidebar {
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #e3e7ef,
+            #dce1ea
+        );
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+
+        background:
+
+            linear-gradient(
+                160deg,
+                #171c2b,
+                #121827
+            );
+
+    }
+
+
+    body.light-theme {
+
+        background:
+
+            linear-gradient(
+                160deg,
+                #e2e6ee,
+                #d9dfe9
+            );
+
+    }
+
+}
