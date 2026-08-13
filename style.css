@@ -4672,3 +4672,73 @@ body.light-theme .sidebar {
     }
 
 }
+
+/* =====================================================
+   CUTE PREMIUM THUMBNAIL
+===================================================== */
+
+.cute-preview {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        #f8eee8;
+
+}
+
+
+.cute-thumbnail {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform .45s ease;
+
+}
+
+
+.premium-template:hover .cute-thumbnail {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+/* Label tetap terlihat di atas gambar */
+
+.cute-preview .template-label {
+
+    z-index: 5;
+
+    background:
+        rgba(20,16,25,.72);
+
+    backdrop-filter:
+        blur(6px);
+
+    -webkit-backdrop-filter:
+        blur(6px);
+
+}
+
+.template-view {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+}

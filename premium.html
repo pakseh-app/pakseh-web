@@ -380,39 +380,19 @@
                 <article class="premium-template gold-template">
 
 
-                    <div class="template-preview">
+                    <div class="template-preview cute-preview">
 
+    <img
+        src="assets/img/cute.png"
+        alt="Undangan Digital Cute"
+        class="cute-thumbnail"
+    >
 
-                        <div class="template-glow"></div>
+    <div class="template-label">
+        PREMIUM
+    </div>
 
-
-                        <div class="template-label">
-                            PREMIUM
-                        </div>
-
-
-                        <div class="template-center">
-
-
-                            <div class="template-small">
-                                THE WEDDING OF
-                            </div>
-
-
-                            <div class="template-name">
-                                A & R
-                            </div>
-
-
-                            <div class="template-date">
-                                12 • 12 • 2026
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
+</div>
 
 
                     <div class="template-info">
@@ -421,18 +401,18 @@
                         <div>
 
                             <div class="template-category">
-                                ELEGANT
+                                CUTE
                             </div>
 
 
                             <h3>
-                                Golden Elegance
+                                Cute
                             </h3>
 
 
                             <p>
-                                Desain elegan dengan
-                                sentuhan warna gold.
+                                Desain cute dan playful
+                                untuk undangan yang ceria.
                             </p>
 
                         </div>
@@ -441,21 +421,22 @@
                         <div class="template-actions">
 
 
-                            <button
-                                type="button"
-                                class="template-view"
-                                onclick="showPremiumNotice('Golden Elegance')"
-                            >
-                                Lihat
-                            </button>
+                            <a
+    href="https://cute.pakseh.web.id"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="template-view"
+>
+    Lihat Undangan
+</a>
 
 
                             <button
                                 type="button"
                                 class="template-use"
-                                onclick="showPremiumNotice('Golden Elegance')"
+                                onclick="orderTheme('Cute')"
                             >
-                                Gunakan
+                                Gunakan Tema
                             </button>
 
                         </div>
@@ -539,7 +520,7 @@
                             <button
                                 type="button"
                                 class="template-view"
-                                onclick="showPremiumNotice('Purple Romance')"
+                                onclick="orderTheme('Purple Romance')"
                             >
                                 Lihat
                             </button>
@@ -548,9 +529,9 @@
                             <button
                                 type="button"
                                 class="template-use"
-                                onclick="showPremiumNotice('Purple Romance')"
+                                onclick="orderTheme('Purple Romance')"
                             >
-                                Gunakan
+                                Gunakan Tema
                             </button>
 
                         </div>
@@ -634,7 +615,7 @@
                             <button
                                 type="button"
                                 class="template-view"
-                                onclick="showPremiumNotice('Midnight Love')"
+                                onclick="orderTheme('Midnight Love')"
                             >
                                 Lihat
                             </button>
@@ -643,9 +624,9 @@
                             <button
                                 type="button"
                                 class="template-use"
-                                onclick="showPremiumNotice('Midnight Love')"
+                                onclick="orderTheme('Midnight Love')"
                             >
-                                Gunakan
+                                Gunakan Tema
                             </button>
 
                         </div>
@@ -720,15 +701,80 @@
 
 <script>
 
-function showPremiumNotice(name) {
+/* =====================================================
+   ORDER TEMA VIA WHATSAPP
+===================================================== */
 
-    alert(
-        "Template \"" +
-        name +
-        "\" sedang dipersiapkan.\n\n" +
-        "Fitur penggunaan template premium akan " +
-        "kita aktifkan pada tahap berikutnya."
-    );
+function orderTheme(themeName) {
+
+    const phoneNumber = "6285156028912";
+
+    const message =
+`Halo Pakseh 👋
+
+Saya ingin memesan Undangan Digital.
+
+🎨 TEMA YANG DIPILIH
+━━━━━━━━━━━━━━━━━━
+Tema: ${themeName}
+
+👰 DATA PENGANTIN WANITA
+━━━━━━━━━━━━━━━━━━
+Nama Lengkap:
+Nama Panggilan:
+Nama Ayah:
+Nama Ibu:
+Alamat Lengkap:
+
+🤵 DATA PENGANTIN PRIA
+━━━━━━━━━━━━━━━━━━
+Nama Lengkap:
+Nama Panggilan:
+Nama Ayah:
+Nama Ibu:
+Alamat Lengkap:
+
+💍 DATA ACARA
+━━━━━━━━━━━━━━━━━━
+Hari/Tanggal Akad:
+Waktu Akad:
+Lokasi Akad:
+Alamat Akad:
+
+Hari/Tanggal Resepsi:
+Waktu Resepsi:
+Lokasi Resepsi:
+Alamat Resepsi:
+
+📍 GOOGLE MAPS
+━━━━━━━━━━━━━━━━━━
+Link Lokasi Akad:
+Link Lokasi Resepsi:
+
+📸 FOTO
+━━━━━━━━━━━━━━━━━━
+Foto Pengantin Pria:
+Foto Pengantin Wanita:
+Foto Bersama:
+
+🎵 MUSIK
+━━━━━━━━━━━━━━━━━━
+Pilihan Musik:
+
+📝 CATATAN TAMBAHAN
+━━━━━━━━━━━━━━━━━━
+
+
+Terima kasih 🙏
+Saya siap melengkapi data yang diperlukan.`;
+
+    const whatsappURL =
+        "https://wa.me/" +
+        phoneNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
 
 }
 
@@ -1675,87 +1721,258 @@ function showPremiumNotice(name) {
 
 
 /* =====================================================
-   ACTIONS
+   PREMIUM ACTION BUTTONS
 ===================================================== */
 
 .template-actions {
 
-    display:
-        flex;
+    display: grid;
 
-    gap:
-        8px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
 
-    margin-top:
-        15px;
+    gap: 9px;
+
+    margin-top: 16px;
+
+}
+
+
+.template-actions button,
+.template-actions a {
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    min-width: 0;
+
+    min-height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 10px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        background .25s ease;
 
 }
 
 
-.template-actions button {
-
-    flex:
-        1;
-
-    min-height:
-        34px;
-
-    border-radius:
-        8px;
-
-    cursor:
-        pointer;
-
-    font-size:
-        9px;
-
-    font-weight:
-        800;
-
-}
-
+/* =====================================================
+   LIHAT UNDANGAN
+===================================================== */
 
 .template-view {
 
-    color:
-        #9ba4b8;
+    color: #bbaaff;
 
-    background:
-        rgba(255,255,255,.04);
+    background: rgba(139,92,246,.08);
 
-    border:
-        1px solid
-        rgba(255,255,255,.08);
+    border: 1px solid rgba(167,139,250,.38);
+
+    box-shadow:
+        inset 0 0 12px rgba(139,92,246,.04),
+        0 0 12px rgba(139,92,246,.04);
 
 }
 
+
+.template-view::before {
+
+    content: "↗";
+
+    font-size: 13px;
+
+    line-height: 1;
+
+    transition: transform .25s ease;
+
+}
+
+
+.template-view:hover {
+
+    color: #ffffff;
+
+    background: rgba(139,92,246,.15);
+
+    border-color: #a78bfa;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(139,92,246,.18),
+        inset 0 0 12px rgba(139,92,246,.06);
+
+}
+
+
+.template-view:hover::before {
+
+    transform: translate(2px,-2px);
+
+}
+
+
+/* =====================================================
+   GUNAKAN TEMA
+===================================================== */
 
 .template-use {
 
-    color:
-        #1a160c;
+    color: #1b160b;
 
     background:
         linear-gradient(
-            90deg,
-            #ffd166,
-            #ffb84d
+            135deg,
+            #ffe08a,
+            #ffc04d
         );
 
-    border:
-        0;
+    border: 1px solid rgba(255,224,138,.65);
 
     box-shadow:
-        0 0 18px
-        rgba(255,209,102,.10);
+        0 7px 18px rgba(255,193,77,.16);
 
 }
 
 
-.template-actions button:hover {
+.template-use::before {
 
-    transform:
-        translateY(-1px);
+    content: "◆";
+
+    font-size: 8px;
+
+}
+
+
+.template-use:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffeaac,
+            #ffc04d
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 24px rgba(255,193,77,.28),
+        0 8px 20px rgba(255,193,77,.14);
+
+}
+
+
+.template-actions button:active,
+.template-actions a:active {
+
+    transform: translateY(0) scale(.97);
+
+}
+
+
+/* =====================================================
+   CUTE THUMBNAIL
+===================================================== */
+
+.cute-preview {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #f8eee8;
+
+}
+
+
+.cute-thumbnail {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+    transition: transform .45s ease;
+
+}
+
+
+.premium-template:hover .cute-thumbnail {
+
+    transform: scale(1.035);
+
+}
+
+
+.cute-preview .template-label {
+
+    z-index: 5;
+
+    background: rgba(20,16,25,.72);
+
+    backdrop-filter: blur(6px);
+
+    -webkit-backdrop-filter: blur(6px);
+
+}
+
+
+/* =====================================================
+   MOBILE BUTTONS
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .template-actions {
+
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+
+        gap: 8px;
+
+    }
+
+    .template-actions button,
+    .template-actions a {
+
+        min-height: 42px;
+
+        padding: 0 8px;
+
+        font-size: 8.5px;
+
+    }
 
 }
 
@@ -2123,6 +2340,23 @@ body.light-theme .coming-content h3 {
 
     }
 
+}
+
+
+/* =====================================================
+   PREMIUM BUTTONS - LIGHT MODE
+===================================================== */
+
+body.light-theme .template-view {
+    color: #7658c7;
+    background: rgba(139,92,246,.06);
+    border-color: rgba(118,88,199,.25);
+}
+
+body.light-theme .template-view:hover {
+    color: #4d348d;
+    background: rgba(139,92,246,.11);
+    border-color: #8b6ee8;
 }
 
 </style>
